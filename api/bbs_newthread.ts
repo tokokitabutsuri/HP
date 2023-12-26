@@ -1,4 +1,4 @@
-/*import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js'
 const { createHmac } = await import('node:crypto');
 // Create a single supabase client for interacting with your database
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY)
@@ -47,4 +47,4 @@ export default async (request, response) => {
     }
   })
     if (!fin) return response.status(200).json({ "status": "success" });
-}*/
+}
